@@ -30,7 +30,7 @@ const checkJwt = jwt({
     jwksUri: `https://${process.env.AUTH0_TENANT}.us.auth0.com/.well-known/jwks.json`,
   }),
 
-  audience: "https://mybank-api-2.test",
+  audience: "https://bank-api-2.test",
   issuer: `https://${process.env.AUTH0_TENANT}.us.auth0.com/`,
   algorithms: ["RS256"],
 });
